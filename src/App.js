@@ -37,7 +37,7 @@ const App = () => {
           <Spin />
         </h1>
       )}
-      <div className=" p-10 gap-5 grid grid-cols-4">
+      <div className=" p-10 gap-5 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
         {users &&
           users.map((user) => <DetailsCard key={user.id} user={user} />)}
       </div>
